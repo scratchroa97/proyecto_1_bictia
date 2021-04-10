@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+/*asi se quitan los borde predeterminados de pagina*/
+
+body {
+    margin: 0%;
+}
+
+.navbar-ElCargador {
+    background: rgb(203, 239, 248);
+}
+
+/*con numeral se llamas a estilos las imagenes*/
+
+#imagen1 {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#imagen2 {
+    width: 250px;
+    text-align: center;
+}
+
+#imagen3 {
+    width: 450px;
+    text-align: center;
+    max-resolution: 200px;
+}
+
+.imagen1-1 {
+    text-align: center;
+}
+
+.imagen2-2 {
+    text-align: center;
+}
+
+.imagen3-3 div {
+    text-align: right;
+}
+
+.titulo1 {
+    text-align: center;
+    color: rgb(0, 0, 255);
+    font-family: 'Train One', cursive;
+}
+
+.titulo2 {
+    text-align: center;
+    color: rgb(0, 0, 255);
+    font-family: 'Train One', cursive;
+}
+
+@media (min-wigth: 300px) and (max-width: 500px) {
+    .imagen3-3 width: 100%;
+    border: darkblue 1%;
+}
