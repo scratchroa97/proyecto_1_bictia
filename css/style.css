@@ -5,11 +5,11 @@ body {
     margin: 0%;
 }
 
-.navbar-ElCargador {
+.navbar {
     background: rgb(203, 239, 248);
 }
 
-/*con numeral se llamas a estilos las imagenes*/
+/*con numeral se llaman a estilos las imagenes*/
 
 #imagen1 {
     width: 200px;
@@ -49,9 +49,26 @@ body {
     text-align: center;
     color: rgb(0, 0, 255);
     font-family: 'Train One', cursive;
+    ;
 }
 
-@media (min-wigth: 300px) and (max-width: 500px) {
-    .imagen3-3 width: 100%;
-    border: darkblue 1%;
-}
+@media (min-width: 300px) and (max-width: 500px) {
+    .imagen3-3 {
+        width: 100%;
+        border: darkblue 1%;
+    }
+    .flex1 {
+        display: flex;
+        background-color: cornsilk;
+        margin: rgb(54, 16, 224);
+        justify-content: space-around;
+        flex-flow: row-reverse;
+    }
+    .flex1 div {
+        margin: 15px;
+        border: black;
+        font-size: larger;
+    }
+    .flex1-2 {
+        border: black;
+    }

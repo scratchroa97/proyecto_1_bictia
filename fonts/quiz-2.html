@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cuadro{
+        display: flex; padding: 4%;
+    }
+    .image{
+        height: 350px; width: 450;
+    }
+    .cuadro div{
+        justify-content: center;
+    }
+    .cuerpo{
+        text-align: center; background: rgb(202, 175, 156);padding: 0% 8%;
+    }
+    .titulo{
+        color: darkblue; font-size: 50px;
+    }
+</style>
+<body class="cuerpo">
+    <h1 class="titulo">Pagina de saludos automatizados</h1>
+    <div class="cuadro">
+        <div>
+            <img class="image" src="http://3.bp.blogspot.com/--aE7mHYWE2w/VHN0DsucEXI/AAAAAAAABT0/eOQSh-QJc-U/s1600/robot.png" alt="">
+        </div>
+        <div>
+            <form action="">
+                <label for="">Dijite su nombre por favor</label>
+                <input type="text" placeholder="Campo Obligatorio" id="nombreusuario">
+            </form>
+            <br>
+            <button onclick="saludar()">Cargar Saludo</button>
+        </div>
+    </div>
+    <script>
+        function saludar(){
+
+var user = document.getElementById("nombreusuario").value
+if (user == ""){
+    alert("Por favor escribe tu nombre")
+}if (user != ""){
+    alert('Hola' + " " + user + " " + 'como estas?')
+}
+}
+    </script>
+</body>
+</html>

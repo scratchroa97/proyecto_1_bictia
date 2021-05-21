@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body1 {
+        margin: 0%;
+        background-color: rgb(231, 73, 73);
+        padding: 1%;
+    }
+
+    .titulo {
+        text-align: center;
+        color: rgb(228, 228, 230);
+        border-color: darkorange 25px;
+        font-size: 40px;
+    }
+
+    .imagen1 {
+        margin: 30px;
+    }
+
+    .formulario {
+        font-family: cursive, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+
+    .botoncito {
+        width: 80px;
+        height: 30px;
+        margin: 10px 0px;
+    }
+
+    .formulariogeneral {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .formulariouno {
+        margin: 3% 0 0 0;
+    }
+    .formulariodoss{
+        color: white; font-family: cursive;
+    }
+</style>
+
+<body class="body1">
+    <H1 class="titulo">ENCUESTA COVID-19</H1>
+    <div class="formulariogeneral">
+        <div class="formulariouno">
+            <form action="" class="formulario">
+                <label for="" id="nombre">Nombre</label>
+                <input type="text" placeholder="Campo Obligatorio">
+                <label for="" id="apellido">Apellido</label>
+                <input type="text" placeholder="Campo Obligatorio"><br>
+                <br><label for="" id="edad">Edad</label>
+                <input type="number" placeholder="Campo Obligatorio">
+                <label for="" id="direccion">Dirección</label>
+                <input type="text" name="" id="" placeholder="Campo Obligatorio">
+                <br><br><label for="" id="telefono">Telefono</label>
+                <input type="number" placeholder="Campo Obligatorio">
+                <label for="" id="tipodocumento">Tipo De Documento</label>
+                <select name="" id="">
+                    <option value="cc">CC</option>
+                    <option value="ce">CE</option>
+                    <option value="ti">TI</option>
+                </select>
+                <label for="N°Documento">N°</label>
+                <input type="text" placeholder="Campo Obligatorio">
+                <br><br>
+            </form>
+            <button class="botoncito" onclick="datosusuario()">Guardar</button><br>
+            <form action="" class="formulariodoss">
+                <h1 class="titulo"> Preguntas </h1>
+                <label for="">¿Ha tenido fiebre en los ultimos 30 dias?</label>
+                <select name="fiebre" id="fiebrerespuesta">
+                    <option value="si" >SI</option>
+                    <option value="no" >NO</option>
+                </select>
+                <br><label for="">¿Tiene Tos?</label>
+                <select name="tos" id="tosrespuesta">
+                    <option value="si" >SI</option>
+                    <option value="no">NO</option>
+                </select>
+                <br><label for="">¿Tiene dolor de cabeza?</label>
+                <select name="cabeza" id="cabezarespuesta">
+                    <option value="si" >SI</option>
+                    <option value="no" >NO</option>
+                </select>
+            </form><button class="botoncito1" onclick="preguntasuser()">Guardar</button>
+        </div>
+        <div></div>
+        <br><br>
+
+        <img class="imagen1" src="../img/geriatricarea-Covid19-coronavirus.jpg" alt="">
+    </div>
+    <script src="../js/clase-4.js"></script>
+</body>
+
+</html>

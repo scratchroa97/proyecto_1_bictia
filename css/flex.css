@@ -1,0 +1,17 @@
+.contenedor-flex {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+}
+
+.contenedor-flex div {
+    text-align: center;
+    background-color: rgb(14, 65, 158);
+    margin: 35px;
+    width: 25%;
+    height: 25%;
+    background: darkgoldenrod;
+    flex
+}

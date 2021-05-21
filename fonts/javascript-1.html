@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <form action="" >
+        <label>Nombres</label>
+        <input id="nombre" type="text" placeholder="Ingresa Tus Nombres">
+        <label>Apellidos</label>
+        <input id="apellido" type="text" placeholder="Ingresa Tus Apellidos">
+        <button onclick= "guardar()"> Guardar</button>
+    </form><br>
+    <form action="">
+        <label>Tipo de Documento</label>
+        <input onclick="identificacion('CC')" type="radio" name="documento" value="CC">CC
+        <input onclick="identificacion('CE')" type="radio" name="documento" value="CE">CE
+        <input onclick="identificacion('NIT')" type="radio" name="documento" value="NIT">NIT
+        <script src="../js/clase-1.js"></script>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TallerLogicaSem2</title>
+</head>
+<style>
+    .cuerpopagina {
+        text-align: center;
+        background-color: rgb(28, 102, 50);
+        color: cornsilk;
+    }
+
+    .titulo {
+        color: rgb(252, 0, 50);
+    }
+
+    .avisopromo {
+        color: rgb(197, 133, 5);
+    }
+
+    .opcionesform {
+        color: rgb(167, 228, 225);
+    }
+
+    .logo {
+        height: 160px;
+        width: 250px;
+    }
+</style>
+
+<body class="cuerpopagina">
+    <h1 class="titulo">Pizzeria Mamma Mia</h1>
+    <img src="../img/635779317114733448+8061.png" alt="" class="logo">
+    <form action="">
+        <h2 class="avisopromo">Eres nuestro cliente " 1'000.000 " tenemos un premio para ti</h2>
+        <label for="" class="opcionesform">TIPO DE USUARIO</label><br>
+        <br><select name="" id="tipousuariouno">
+            <option value="menor">Menor 10 años</option>
+            <option value="mayor">Mayor 18 años</option>
+            <option value="otra">Otra</option>
+        </select><br>
+        <br><label for="" class="opcionesform">GENERO</label><br>
+        <br><select name="" id="generousuariouno">
+            <option value="hombre">Masculino</option>
+            <option value="mujer">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+    </form><br>
+    <button onclick="guardardatos()">Guardar</button>
+    <script src="../js/TallerLogicaPtos1-2-3.js"></script>
+</body>
+
+</html>

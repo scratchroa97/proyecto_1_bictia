@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <nav class="navbar-ElCargador" id="">
-        <h1 class="titulo1">El Cargador</h1><br>
-        <div class="imagen1-1"> <img id="imagen1" src="img/cargador-300x239.png" alt=""></div>
+        <h1 class="titulo1">El Cargador</h1><br></nav>
+        <div class="imagen1-1"> <img id="imagen1" src="../img/cargador-300x239.png" alt=""></div>
         <p> Hola! somos unos soñadores, iniciamos con la idea de un pequeño local, sencillo pero acogedor que le
             brindara a las personas o en este caso a nuestros clientes la confianza de arreglar comprar y realizar
             muchas mas cosas en un solo lugar; fue así que después de varias semanas de búsqueda para establecer cual
@@ -20,7 +20,7 @@
         <p>El 19 de marzo del 2014 surgió El Cargador en la ciudad de Bogotá, ubicado sobre la calle 46 del barrio marly
             en chapinero. pero ¿a que nos dedicamos? Nuestra principal actividad se trata de comercializar accesorios
             para telefonía móvil y servicio técnico de equipos móviles.</p>
-        <div class="imagen2-2"><img id="imagen2" src="img/creciendo.png" alt=""></div>
+        <div class="imagen2-2"><img id="imagen2" src="../img/creciendo.png" alt=""></div>
         <p>Claro que no en ese momento simplemente eramos un negocio mas con un servicio que ya existe, por eso nos
             esforzamos por siempre brindar a nuestros clientes mas opciones, mas ayudas, mas soluciones y poco a poco
             hemos crecido nos hemos ampliado y hemos consolidado convenios con varias empresas con el fin de brindar en
@@ -29,36 +29,43 @@
             buscando un solo objetivo brindarte la mayor cantid ad de servicios en un solo lugar veras algunos de ellos
             a continuación.
         <p>
-        <form method="GET" action="url">
-            <h4 class="titulo2"> ¡Quieres Recibir Descuentos!</h4><br>
-            <label>Nombres</label>
-            <input type="text" placeholder="Ingresa Tu Nombre">
-            <label>Apellidos</label>
-            <input type="text" placeholder="Ingresa Tus Apellidos">
-            <br>
-            <label>Tipo de Documento</label>
-            <select name="" id="">
-                <option value="cc"> CC </option>
-                <option value="ce"> CE </option>
-                <option value="nit"> NIT </option>
-                <label>N° Documento</label>
-                <input type="text" placeholder="Ingresa Tu N° Identificación"><br>
-                <label>Foto Documento</label>
-                <input type="file"><br>
-                <label>Nivel Educativo</label>
-                <input type="radio" name="educacion" value="bachiller">Bachiller
-                <input type="radio" name="educacion" value="universitario">Universitario
-                <input type="radio" name="educacion" value="especializacion">Especializaión <br>
-                <label>N° Telefono</label>
-                <input type="number" placeholder="Ingresa Tu N° Telefonico"><br>
-                <label>Email</label>
-                <input type="email" placeholder="Ingresa Tu Correo Electronico"><br>
-                <input type="checkbox"> Acepta <span><a target="_blank"
-                        href="https://elcargadoronline.com/politica-de-privacidad/">Terminos & Condiciones </a></span>
-                <br><br><input type="submit" value="Suscribirme" /><br>
-                <br><a target="_blank" href="https://elcargadoronline.com/tienda/">
-                    <div class="imagen3-3"><img id="imagen3" src="img/contacto.jpg" alt=""></div>
-        </form>
+
+        <div class="flex1">
+            <div class="flex1-1">
+                <form method="GET" action="url"> 
+                    <h4 class="titulo2"> ¡Quieres Recibir Descuentos!</h4><br>
+                    <label>Nombres</label>
+                    <input type="text" placeholder="Ingresa Tu Nombre">
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Ingresa Tus Apellidos">
+                    <br>
+                    <label>Tipo de Documento</label>
+                    <select name="" id="">
+                        <option value="cc"> CC </option>
+                        <option value="ce"> CE </option>
+                        <option value="nit"> NIT </option>
+                        <label>N° Documento</label>
+                        <input type="text" placeholder="Ingresa Tu N° Identificación"><br>
+                        <label>Foto Documento</label>
+                        <input type="file"><br>
+                        <label>Nivel Educativo</label>
+                        <input type="radio" name="educacion" value="bachiller">Bachiller
+                        <input type="radio" name="educacion" value="universitario">Universitario
+                        <input type="radio" name="educacion" value="especializacion">Especializaión <br>
+                        <label>N° Telefono</label>
+                        <input type="number" placeholder="Ingresa Tu N° Telefonico"><br>
+                        <label>Email</label>
+                        <input type="email" placeholder="Ingresa Tu Correo Electronico"><br>
+                        <input type="checkbox"> Acepta <span><a target="_blank"
+                                href="https://elcargadoronline.com/politica-de-privacidad/">Terminos & Condiciones
+                            </a></span>
+                        <br><br><input type="submit" value="Suscribirme" /><br>
+            </div>
+            <div class="flex1-2"><br><a target="_blank" href="https://elcargadoronline.com/tienda/">
+                    <img id="imagen3" src="../img/contacto.jpg" alt="">
+            </div></div>
+            
+    <div></div></form>
         <br>
         <table>
             <tr>
@@ -74,7 +81,6 @@
                 <td>08-04-21</td>
             </tr>
             <tr>
-
                 <th>Estudiante 2</th>
                 <td colspan="2">Cristian Arango</td>
                 <td>08-04-21</td>
@@ -86,7 +92,7 @@
                 <td>08-04-21</td>
             </tr>
         </table>
-
+        <script src="../js/sweetalert2@10.js"></script>
 </body>
 
 </html>

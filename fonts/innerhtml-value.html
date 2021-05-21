@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="texto_en_p">0</p>
+    <form action="">
+        <label for="">Menu de paquitos y tacos</label>
+        <select id="menu" onchange="calcular_precio()">
+            <option value="papas">Papas fritas</option>
+            <option value="fresas">fresas con crema</option>
+            <option value="huevos">docena de huevos</option>
+            <option value="tacos">tacos</option>
+            <option value="cerveza">cerveza</option>
+        </select>
+        <input type="hidden" id="precio_total" value="0">
+    </form>
+    <script>
+        function calcular_precio() {
+            let precio_actual = precio_actual_cliente()
+            console.log(precio_actual)
+            let opcion_menu = document.getElementById("menu").value
+            let precio = 0
+            switch (opcion_menu) {
+                case "papas":
+                    precio = 2500
+                    break
+                case "fresas":
+                    precio = 1000
+                    break
+                case "huevos":
+                    precio = 1800
+                    break
+                case "tacos":
+                    precio = 12000
+                    break
+                case "cerveza":
+                    precio = 2200
+                    break
+            }
+            if (precio_actual != 0) {
+                precio_actual = parseInt(precio) + parseInt(precio_actual)
+            } else {
+                precio_actual = precio
+            }
+            document.getElementById("precio_total").value = precio_actual
+            document.getElementById("texto_en_p").innerHTML = precio_actual
+
+        }
+
+        function precio_actual_cliente() {
+            return document.getElementById("precio_total").value
+        }
+    </script>
+
+</body>
+
+</html>

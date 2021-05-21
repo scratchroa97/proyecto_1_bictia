@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<STYle>
+    .body {
+        justify-content: center; text-align: center;
+    }
+    .letrero{font-size: 50px;
+    }
+</STYle>
+<body class="body">
+    <form action="">
+        <h1>HELADOS FRIOS DE VERDAD JAJA</h1><br>
+        <label> <p class="letrero" >Adiciona Tu Topping</p></label><br>
+            <input type="radio" name="topping" onclick="OrdenHelado('oreo')" value="oreo">Oreo
+            <input type="radio" name="topping" onclick="OrdenHelado('kitkat')" value="kitkat">Kit Kat
+            <input type="radio" name="topping" onclick="OrdenHelado('brownie')" value="brownie">Brownie
+            <input type="radio" name="topping" onclick="OrdenHelado('mermelada')" value="mermelada">Mermelada
+            <input type="text" name="topping" onclick="OrdenHelado('otroSsabor')" value="otrosabor">Otro Sabor <br>
+    </form>
+    <button onclick="Comprar()">Ordenar</button>
+    <script src="../js/clase-3.js"></script>
+</body>
+
+</html>

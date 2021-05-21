@@ -1,0 +1,15 @@
+.ultima{
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.ultima div{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin: 4%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-color: black;
+    border-style: solid;
+}
